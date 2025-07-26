@@ -1,0 +1,10 @@
+!mona config -set workingfolder c:\mona\%p
+
+!mona findmsp -distance <distance from ESP to begin search from> #use same number as cyclic pattern generation
+
+
+
+!mona bytearray -b "\x00"
+!mona compare -f C:\mona\oscp\bytearray.bin -a <address>
+
+!mona jmp -r esp -cpb "\x00"
