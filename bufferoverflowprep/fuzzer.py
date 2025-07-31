@@ -2,11 +2,11 @@
 
 import socket, time, sys
 
-ip = "10.10.113.226"
+ip = "127.0.0.1"
 
 port = 1337
 timeout = 5
-prefix = "OVERFLOW1 "
+prefix = ""
 
 string = prefix + "A" * 100
 
